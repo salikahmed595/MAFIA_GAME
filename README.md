@@ -132,7 +132,9 @@ Review `git status` before pushing. The lockfile is included for reproducible in
 
 ### 7. Import into Vercel
 
-In Vercel, choose **Add New → Project**, connect GitHub, and import `salikahmed595/MAFIA_GAME`. Use the repository root as the project root and configure:
+In Vercel, open **[New Project](https://vercel.com/new)** and select **Import** beside the existing GitHub repository `salikahmed595/MAFIA_GAME`. If you are on `/new/clone` and see **Private Repository Name**, go back: that page creates a second GitHub repository. The existing repository does not need to be cloned again.
+
+Set the **Vercel Project Name** to `mafia-game` (all lowercase). The GitHub repository stays named `MAFIA_GAME`. Vercel project names cannot contain uppercase letters; the uppercase default shown on the clone page triggers the name validation error. Use the repository root as the project root and configure:
 
 | Setting           | Value           |
 | ----------------- | --------------- |
