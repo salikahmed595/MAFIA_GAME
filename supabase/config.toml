@@ -1,0 +1,20 @@
+project_id = "mafia-midnight-council"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "graphql_public"]
+extra_search_path = ["public", "extensions"]
+
+[db]
+port = 54322
+major_version = 17
+
+[auth]
+enabled = true
+site_url = "http://localhost:5173"
+additional_redirect_urls = ["http://localhost:5173/**", "http://localhost:4173/**"]
+enable_anonymous_sign_ins = true
+
+[functions.health]
+verify_jwt = true
